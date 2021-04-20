@@ -20,10 +20,10 @@ class ContactsController < ApplicationController
       render :new
   end
 
-  def update
+  def edit
   end
 
-  def edit
+  def update
   end
 
   def update
