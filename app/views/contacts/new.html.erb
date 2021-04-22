@@ -1,2 +1,10 @@
 <h1>Contacts#new</h1>
 <p>Find me in app/views/contacts/new.html.erb</p>
+
+
+<%= simple_form_for @contact do |f| %>
+  <%= f.input :name, required: true, placeholder: 'Enter name' %>
+  <%= f.input :birthdate, required: true %>
+  <%= f.input :gift, as: :radio_buttons, label: 'Worth a gift' %>
+  <%= f.button :submit %>
+<% end %>
