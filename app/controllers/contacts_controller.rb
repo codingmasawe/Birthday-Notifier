@@ -18,6 +18,7 @@ class ContactsController < ApplicationController
       redirect_to @contact
     else
       render :new
+    end
   end
 
   def edit
@@ -36,6 +37,5 @@ class ContactsController < ApplicationController
 
   def contact_params
     params.require(:contact).permit(:name, :birthdate)
-  end
   end
 end
