@@ -58,3 +58,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 gem 'simple_form'
+
+gem 'mailgun-ruby', '~>1.2.4'
+
+gem 'devise'
+
