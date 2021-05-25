@@ -10,3 +10,10 @@
 
 
 fakeFriend = Contact.create(name: 'Fakyyyyyyyyy Fakerson', birthdate: DateTime.new(2015, 6, 22), gift: false)
+
+
+user_one = User.create!(email: 'wuennik@live.com', password: 'verySecret', password_confirmation: 'verySecret')
+
+
+
+puts 'seeded users successfully'
