@@ -12,6 +12,14 @@
 fakeFriend = Contact.create(name: 'Fakyyyyyyyyy Fakerson', birthdate: DateTime.new(2015, 6, 22), gift: false)
 
 
+30.times do
+  Contact.create([{
+  name: Faker::FunnyName.three_word_name,
+  birthdate: Faker::Date.between(from: '1970-03-12', to: '2000-01-24'),
+  gift: Faker::Boolean.boolean(true_ratio: 0.7)
+  }])
+end
+
 user_one = User.create!(email: 'wuennik@live.com', password: 'verySecret', password_confirmation: 'verySecret')
 
 
