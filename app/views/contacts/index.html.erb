@@ -2,18 +2,26 @@
 <%= puts 'test' %>
 <% end %>
 
-<h1>These are all contacts</h1>
-<ul>
-  <% @contacts.each do |c|  %>
-  <li><strong>Name: </strong><%= c.name %></li>
-  <li><strong>Date of Birth: </strong><%= c.birthdate %></li>
-  <li><strong>Gift?: </strong><%= c.gift %></li>
-  <br>
-  <br>
-<% end %>
-</ul>
+<div class="container">
 
 
-<%= link_to "Add a new birthday child", new_contact_path %>
+  <div class="card">
+    <h1>These are all contacts</h1>
+  </div>
+
+  <ul>
+    <% @contacts.each do |c|  %>
+    <li><strong>Name: </strong><%= c.name %></li>
+    <li><strong>Date of Birth: </strong><%= c.birthdate %></li>
+    <li><strong>Gift?: </strong><%= c.gift %></li>
+    <br>
+    <br>
+  <% end %>
+  </ul>
+  <div class="btn btn-small"></div>
+  <%= link_to "Add a new birthday child", new_contact_path %>
+</div>
+
+
 
 
